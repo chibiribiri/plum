@@ -1,0 +1,44 @@
+{{!< default}}
+
+{{#post}}
+    <div class="post outer">
+        <div class="inner">
+            <main class="content">
+                <header class="post__header">
+                    <h1 class="title">{{title}}</h1>
+                </header>
+                <section class="post-content" style="margin-bottom: 4.8rem;">
+                    {{#if feature_image}}
+                        <div class="post__cover">
+                            <div class="wrap">
+                                <figure>
+                                    <img srcset="{{img_url feature_image size="s"}} 420w, {{img_url feature_image size="m"}} 840w, {{img_url feature_image size="l"}} 1536w, {{img_url feature_image size="xl"}} 2048w"
+                                         sizes="(min-width: 1216px) 1216px, 100vw"
+                                         src="{{img_url feature_image size="l"}}" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    {{/if}}
+
+                    {{content}}
+                </section>
+
+            </main>
+
+        </div>
+    </div>
+{{/post}}
+
+{{> common}}
+
+{{> img-modal}}
+
+{{!--
+{{#contentFor "prism-css"}}
+    {{> prism-css}}
+{{/contentFor}}
+
+{{#contentFor "prism-js"}}
+    {{> prism-js}}
+{{/contentFor}}
+--}}
