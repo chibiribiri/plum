@@ -1,5 +1,5 @@
 {
-    "name": "plum (k)",
+    "name": "plum",
     "description": "A custom theme for ghost",
     "demo": "https://22temi.cc",
     "version": "1.0.1",
@@ -35,7 +35,7 @@
     "devDependencies": {
         "autoprefixer": "9.8.0",
         "cssnano": "4.1.10",
-        "gscan": "3.5.4",
+        "gscan": "^3.6.0",
         "gulp": "4.0.2",
         "gulp-concat": "^2.6.1",
         "gulp-livereload": "4.0.2",
