@@ -58,10 +58,18 @@
         text-transform: uppercase
         letter-spacing: 1px
         transition: background .2s ease
+        
+        &:after
+            content: ""
+            display: block
+            height: .5rem
 
-        &:focus,
-        &:hover
-          background: $grey-light
+        &:focus::after,
+        &:hover::after
+            content: ""
+            display: block
+            height: .5rem
+            background-image: linear-gradient($background 0%,  $primary 50%)
 
     .menu-bar
       +from($main-breakpoint)
